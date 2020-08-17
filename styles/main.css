@@ -12,7 +12,7 @@
 }
 
 .hero-section .header .mobile-nav,
-.hero-section .header .desktop-nav {
+.hero-section .header .desktop-nav, .hero-section .hero-content .left-content, .hero-section .hero-content .left-content .cta .cta-btn a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +34,29 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Nunito, sans-serif;
+}
+
+body .container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+body .container .section-intro {
+  text-align: center;
+}
+
+body .container .section-intro h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #0f2137;
+}
+
+body .container .section-intro p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #343d48;
 }
 
 .hero-section {
@@ -122,7 +144,7 @@ body {
 
 .hero-section .header .mobile-menu {
   top: 0;
-  left: 0;
+  left: 100%;
   z-index: 5;
   opacity: 0;
   width: 100%;
@@ -130,9 +152,12 @@ body {
   position: fixed;
   background: #ffffff;
   padding: 120px 25px 0 25px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .hero-section .header .mobile-menu.active {
+  left: 0;
   opacity: 1;
 }
 
@@ -177,6 +202,54 @@ body {
 }
 
 .hero-section .header .desktop-nav {
+  display: none;
+}
+
+.hero-section .hero-content {
+  height: 100vh;
+}
+
+.hero-section .hero-content .left-content {
+  width: 100%;
+  height: 100%;
+  padding: 100px 100px 0 0;
+}
+
+.hero-section .hero-content .left-content .cta {
+  color: #fff;
+}
+
+.hero-section .hero-content .left-content .cta h1 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero-section .hero-content .left-content .cta p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.hero-section .hero-content .left-content .cta .cta-btn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #fe7a00;
+}
+
+.hero-section .hero-content .left-content .cta .cta-btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero-section .hero-content .left-content .cta .cta-btn img {
+  height: 25px;
+  padding-left: 10px;
+}
+
+.hero-section .hero-content .right-content {
   display: none;
 }
 /*# sourceMappingURL=main.css.map */
