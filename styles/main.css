@@ -12,7 +12,7 @@
 }
 
 .hero-section .header .mobile-nav,
-.hero-section .header .desktop-nav, .hero-section .hero-content .left-content, .hero-section .hero-content .left-content .cta .cta-btn a, .benefits-section .benefits-container, .methodology-section .methodology-container .right-content .timeline ul li .timeline-item {
+.hero-section .header .desktop-nav, .hero-section .hero-content, .hero-section .hero-content .left-content, .hero-section .hero-content .left-content .cta .cta-btn a, .benefits-section .benefits-container, .methodology-section .methodology-container, .methodology-section .methodology-container .right-content .timeline ul li .timeline-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,18 +176,18 @@ body .section-intro p {
   transition: all .5s;
 }
 
-.hero-section .header .mobile-menu ul li a {
-  font-weight: 300;
-  color: #0f2243;
-  text-decoration: none;
-}
-
 .hero-section .header .mobile-menu ul li:hover {
   padding-left: 20px;
 }
 
 .hero-section .header .mobile-menu ul li:hover a {
   font-weight: 500;
+}
+
+.hero-section .header .mobile-menu ul li a {
+  font-weight: 300;
+  color: #0f2243;
+  text-decoration: none;
 }
 
 .hero-section .header .mobile-menu .btns-container .btn {
@@ -205,18 +205,106 @@ body .section-intro p {
   margin-bottom: 0;
 }
 
+@media (min-width: 1200px) {
+  .hero-section .header .mobile-nav {
+    display: none;
+  }
+}
+
 .hero-section .header .desktop-nav {
   display: none;
 }
 
+@media (min-width: 1200px) {
+  .hero-section .header .desktop-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.hero-section .header .desktop-nav .desktop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-section .header .desktop-nav .desktop-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.hero-section .header .desktop-nav .desktop-menu ul li {
+  margin: 0 20px;
+}
+
+.hero-section .header .desktop-nav .desktop-menu ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+.hero-section .header .desktop-nav .desktop-menu ul li a:hover {
+  font-weight: 500;
+}
+
+.hero-section .header .desktop-nav .desktop-menu .btns-container .learners-btn,
+.hero-section .header .desktop-nav .desktop-menu .btns-container .talent-btn,
+.hero-section .header .desktop-nav .desktop-menu .btns-container .expert-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.hero-section .header .desktop-nav .desktop-menu .btns-container .learners-btn {
+  background: #16325b;
+}
+
+.hero-section .header .desktop-nav .desktop-menu .btns-container .talent-btn,
+.hero-section .header .desktop-nav .desktop-menu .btns-container .expert-btn {
+  background: #ff7a00;
+}
+
 .hero-section .hero-content {
   height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .hero-section .hero-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .hero-section .hero-content .left-content {
   width: 100%;
   height: 100%;
   padding-top: 100px;
+}
+
+@media (min-width: 900px) {
+  .hero-section .hero-content .left-content {
+    width: 50%;
+  }
 }
 
 .hero-section .hero-content .left-content .cta {
@@ -227,6 +315,12 @@ body .section-intro p {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+  .hero-section .hero-content .left-content .cta h1 {
+    font-size: 45px;
+  }
 }
 
 .hero-section .hero-content .left-content .cta p {
@@ -255,6 +349,16 @@ body .section-intro p {
 
 .hero-section .hero-content .right-content {
   display: none;
+}
+
+@media (min-width: 900px) {
+  .hero-section .hero-content .right-content {
+    width: 50%;
+    display: block;
+  }
+  .hero-section .hero-content .right-content img {
+    width: 100%;
+  }
 }
 
 .benefits-section {
@@ -308,8 +412,32 @@ body .section-intro p {
   color: #343d48;
 }
 
+.methodology-section .methodology-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .methodology-section .methodology-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .methodology-section .methodology-container .left-content {
-  background: radial-gradient(#e66465, #9198e5);
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .methodology-section .methodology-container .left-content {
+    width: 50%;
+  }
 }
 
 .methodology-section .methodology-container .left-content img {
@@ -318,6 +446,12 @@ body .section-intro p {
 
 .methodology-section .methodology-container .right-content {
   width: 100%;
+}
+
+@media (min-width: 900px) {
+  .methodology-section .methodology-container .right-content {
+    width: 50%;
+  }
 }
 
 .methodology-section .methodology-container .right-content .timeline ul {
@@ -373,6 +507,12 @@ body .section-intro p {
   margin-right: 20px;
 }
 
+@media (min-width: 900px) {
+  .methodology-section .methodology-container .right-content .timeline ul li .timeline-item span {
+    font-size: 70px;
+  }
+}
+
 .methodology-section .methodology-container .right-content .timeline ul li .timeline-item .timeline-details {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -384,6 +524,12 @@ body .section-intro p {
   font-weight: 500;
   color: #0f2137;
   margin-bottom: 10px;
+}
+
+@media (min-width: 900px) {
+  .methodology-section .methodology-container .right-content .timeline ul li .timeline-item .timeline-details h6 {
+    font-size: 20px;
+  }
 }
 
 .methodology-section .methodology-container .right-content .timeline ul li .timeline-item .timeline-details p {
@@ -404,9 +550,10 @@ body .section-intro p {
 .schedule-section .section-intro .schedule-btn {
   width: 60%;
   border: none;
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
   margin-top: 50px;
+  max-width: 300px;
   color: #ffffff;
   font-weight: 600;
   border-radius: 5px;
@@ -457,5 +604,10 @@ body .section-intro p {
 
 .footer .copyright {
   font-size: 14px;
+  text-align: center;
+}
+
+.footer .copyright p {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
