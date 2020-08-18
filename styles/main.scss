@@ -19,6 +19,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 
     .container {
@@ -427,5 +428,53 @@ body {
             border-radius: 5px;
             background: #ff7a00;
         }
+    }
+}
+
+.footer {
+    padding: 100px 0;
+    color: #ffffff;
+    position: relative;
+    background-color: rgb(22, 50, 91);
+    
+    .footer-bg {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    
+    .logo-container {
+        width: 120px;
+        margin: 0 auto 20px auto;
+        
+        img {
+            width: 100%;
+        }
+        
+    }
+    
+    .footer-nav {
+        ul {
+            @extend %center;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-bottom: 20px;
+            
+            li {
+                padding: 10px 20px;
+                
+                a {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #ffffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    .copyright {
+        font-size: 14px;
     }
 }

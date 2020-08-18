@@ -1,5 +1,5 @@
 .hero-section .header .mobile-nav .menu-icon-container,
-.hero-section .header .desktop-nav .menu-icon-container {
+.hero-section .header .desktop-nav .menu-icon-container, .footer .footer-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,6 +34,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -387,5 +388,51 @@ body .section-intro p {
   font-weight: 600;
   border-radius: 5px;
   background: #ff7a00;
+}
+
+.footer {
+  padding: 100px 0;
+  color: #ffffff;
+  position: relative;
+  background-color: #16325b;
+}
+
+.footer .footer-bg {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.footer .logo-container {
+  width: 120px;
+  margin: 0 auto 20px auto;
+}
+
+.footer .logo-container img {
+  width: 100%;
+}
+
+.footer .footer-nav ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footer .footer-nav ul li {
+  padding: 10px 20px;
+}
+
+.footer .footer-nav ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .copyright {
+  font-size: 14px;
 }
 /*# sourceMappingURL=main.css.map */
