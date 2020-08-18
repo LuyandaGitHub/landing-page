@@ -82,6 +82,27 @@ body .section-intro p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.hero-section .header .mobile-nav.scrolled,
+.hero-section .header .desktop-nav.scrolled {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(22, 50, 91, 0.2);
+}
+
+.hero-section .header .mobile-nav.scrolled .menu-icon-container .menu-icon,
+.hero-section .header .desktop-nav.scrolled .menu-icon-container .menu-icon {
+  background: #16325b;
+}
+
+.hero-section .header .mobile-nav.scrolled .menu-icon-container .menu-icon::before,
+.hero-section .header .desktop-nav.scrolled .menu-icon-container .menu-icon::before {
+  background: #16325b;
+}
+
+.hero-section .header .mobile-nav.scrolled .menu-icon-container .menu-icon::after,
+.hero-section .header .desktop-nav.scrolled .menu-icon-container .menu-icon::after {
+  background: #16325b;
+}
+
 .hero-section .header .mobile-nav .logo-container,
 .hero-section .header .desktop-nav .logo-container {
   width: 120px;
@@ -221,6 +242,10 @@ body .section-intro p {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.hero-section .header .desktop-nav.scrolled .desktop-menu ul li a {
+  color: #16325b;
 }
 
 .hero-section .header .desktop-nav .desktop-menu {

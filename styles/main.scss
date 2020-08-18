@@ -66,6 +66,25 @@ body {
             @extend %space-between;
             border-bottom: 1px solid rgba(#ffffff, .2);
 
+            &.scrolled {
+                background: #ffffff;
+                border-bottom: 1px solid rgba(#16325b, .2);
+
+                .menu-icon-container {
+                    .menu-icon {
+                        background: #16325b;
+
+                        &::before {
+                            background: #16325b;
+                        }
+                        
+                        &::after {
+                            background: #16325b;
+                        }
+                    }
+                }
+            }
+
             .logo-container {
                 width: 120px;
 
@@ -197,10 +216,24 @@ body {
                 display: flex;
             }
 
+            &.scrolled {
+                .desktop-menu {
+                    ul {
+                        li {
+                            a {
+                                color: #16325b;
+                            }
+                        }
+                    }
+                }
+            }
+
             .desktop-menu {
                 display: flex;
                 margin-right: 20px;
                 align-items: center;
+
+
 
                 ul {
                     display: flex;
