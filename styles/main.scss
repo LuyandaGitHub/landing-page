@@ -23,7 +23,7 @@ body {
     font-family: 'Raleway', sans-serif;
 
     .container {
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
         max-width: 1200px;
     }
@@ -50,9 +50,10 @@ body {
 .hero-section {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom right, #16325b, #37499a);
+    background: linear-gradient(to right, #16325b, #37499a);
     
     .header {
+
         .mobile-nav, 
         .desktop-nav {
             top: 0;
@@ -61,7 +62,8 @@ body {
             z-index: 10;
             position: fixed;
             padding: 15px 50px;
-            background: #16325b;
+            // background: #16325b;
+            background: linear-gradient(to right, #16325b, #37499a);
             @extend %space-between;
             border-bottom: 1px solid rgba(#ffffff, .2);
 
@@ -239,36 +241,46 @@ body {
 }
 
 .benefits-section {
-    padding: 150px 0;
+    padding: 100px 0;
     background: #ecf0fe;
 
-    .benefit {
-        margin-bottom: 60px;
-        text-align: center;
+    .benefits-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        @extend %space-between;
 
-        .benefit-img {
-            height: 150px;
-            margin-bottom: 30px;
-
-            img {
-                height: 100%;
-            }
+        @media (min-width: 900px) {
+            flex-direction: row;
         }
+        
+        .benefit {
+            flex: 1;
+            text-align: center;
+            margin: 0 20px 60px 20px;
 
-        .benefit-description {
-            h3 {
-                font-size: 16px;
-                margin-bottom: 15px;
+            .benefit-img {
+                height: 150px;
+                margin-bottom: 30px;
+    
+                img {
+                    height: 100%;
+                }
             }
-
-            p {
-                font-size: 15px;
-                color: #343d48;
+    
+            .benefit-description {
+                h3 {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+    
+                p {
+                    font-weight: 200;
+                    font-size: 15px;
+                    color: #343d48;
+                }
             }
         }
     }
-
-
 }
 
 .methodology-section {
