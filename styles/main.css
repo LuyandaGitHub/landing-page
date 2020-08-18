@@ -12,7 +12,7 @@
 }
 
 .hero-section .header .mobile-nav,
-.hero-section .header .desktop-nav, .hero-section .hero-content .left-content, .hero-section .hero-content .left-content .cta .cta-btn a {
+.hero-section .header .desktop-nav, .hero-section .hero-content .left-content, .hero-section .hero-content .left-content .cta .cta-btn a, .methodology-section .methodology-container .right-content .timeline ul li .timeline-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,18 +43,18 @@ body .container {
   max-width: 1200px;
 }
 
-body .container .section-intro {
+body .section-intro {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
-body .container .section-intro h2 {
+body .section-intro h2 {
   font-weight: 500;
   font-size: 30px;
   color: #0f2137;
 }
 
-body .container .section-intro p {
+body .section-intro p {
   font-size: 14px;
   color: #343d48;
 }
@@ -280,5 +280,88 @@ body .container .section-intro p {
 .benefits-section .benefit .benefit-description p {
   font-size: 15px;
   color: #343d48;
+}
+
+.methodology-section .methodology-container .left-content {
+  background: radial-gradient(#e66465, #9198e5);
+}
+
+.methodology-section .methodology-container .left-content img {
+  width: 100%;
+}
+
+.methodology-section .methodology-container .right-content {
+  width: 100%;
+}
+
+.methodology-section .methodology-container .right-content .timeline ul {
+  width: 75%;
+  margin: 50px auto;
+  text-align: left;
+  list-style: none;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.methodology-section .methodology-container .right-content .timeline ul li .timeline-item + .timeline-item {
+  background: #000;
+}
+
+.methodology-section .methodology-container .right-content .timeline ul li .timeline-item {
+  padding-bottom: 30px;
+}
+
+.methodology-section .methodology-container .right-content .timeline ul li .timeline-item:hover .circle::before {
+  background: #105ed3;
+}
+
+.methodology-section .methodology-container .right-content .timeline ul li .timeline-item .circle {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  border-radius: 40%;
+  position: relative;
+  background: white;
+  -webkit-box-shadow: rgba(23, 65, 104, 0.2) 0px 3px 8px 0.5px;
+          box-shadow: rgba(23, 65, 104, 0.2) 0px 3px 8px 0.5px;
+}
+
+.methodology-section .methodology-container .right-content .timeline ul li .timeline-item .circle::before {
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  position: absolute;
+  background: #eaebec;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.methodology-section .methodology-container .right-content .timeline ul li .timeline-item span {
+  font-size: 40px;
+  color: #eaebec;
+  margin-right: 20px;
+}
+
+.methodology-section .methodology-container .right-content .timeline ul li .timeline-item .timeline-details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.methodology-section .methodology-container .right-content .timeline ul li .timeline-item .timeline-details h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f2137;
+  margin-bottom: 10px;
+}
+
+.methodology-section .methodology-container .right-content .timeline ul li .timeline-item .timeline-details p {
+  font-size: 15px;
+  color: #5d646d;
 }
 /*# sourceMappingURL=main.css.map */
