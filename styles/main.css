@@ -52,9 +52,11 @@ body .section-intro h2 {
   font-weight: 500;
   font-size: 30px;
   color: #0f2137;
+  margin-bottom: 10px;
 }
 
 body .section-intro p {
+  font-weight: 500;
   font-size: 14px;
   color: #343d48;
 }
@@ -363,5 +365,27 @@ body .section-intro p {
 .methodology-section .methodology-container .right-content .timeline ul li .timeline-item .timeline-details p {
   font-size: 15px;
   color: #5d646d;
+}
+
+.schedule-section {
+  padding: 40px 0 50px 0;
+  background-color: #ecf0fe;
+}
+
+.schedule-section .section-intro {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.schedule-section .section-intro .schedule-btn {
+  width: 60%;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 50px;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 5px;
+  background: #ff7a00;
 }
 /*# sourceMappingURL=main.css.map */
