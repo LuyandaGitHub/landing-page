@@ -80,7 +80,7 @@ body .section-intro p {
   padding: 15px 50px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid white;
   background: -webkit-gradient(linear, left top, right top, from(#16325b), to(#37499a));
   background: linear-gradient(to right, #16325b, #37499a);
 }
@@ -598,6 +598,7 @@ body .section-intro p {
   padding: 100px 0;
   color: #ffffff;
   position: relative;
+  overflow-x: hidden;
   background-color: #16325b;
 }
 

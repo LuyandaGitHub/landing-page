@@ -65,7 +65,7 @@ body {
             padding: 15px 50px;
             @extend %space-between;
             transition: all .5s ease-in-out;
-            border-bottom: 1px solid rgba(#ffffff, .2);
+            border-bottom: 1px solid rgba(#ffffff, 1);
             background: linear-gradient(to right, #16325b, #37499a);
 
             &.scrolled {
@@ -552,6 +552,7 @@ body {
     padding: 100px 0;
     color: #ffffff;
     position: relative;
+    overflow-x: hidden;
     background-color: rgb(22, 50, 91);
     
     .footer-bg {
