@@ -74,8 +74,8 @@ body .section-intro p {
 .hero-section .header .desktop-nav {
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 10;
+  width: 100vw;
   position: fixed;
   padding: 15px 50px;
   -webkit-transition: all .5s ease-in-out;
