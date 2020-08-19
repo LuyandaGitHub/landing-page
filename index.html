@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles\main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="hero-section">
-        <header class="header">
+        <header class="header" id="header">
             <div class="mobile-nav">
                 <div class="logo-container">
                     <img src="images/zaio_white_logo.png" alt="zaio logo" class="logo">
@@ -21,8 +22,8 @@
             </div>
             <nav class="mobile-menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Next-Gen Hiring</a></li>
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#methodology-section">Next-Gen Hiring</a></li>
                     <li><a href="#">Case Studies</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
@@ -38,8 +39,8 @@
                 </div>
                 <div class="desktop-menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Next-Gen Hiring</a></li>
+                        <li><a href="#header" class="active">Home</a></li>
+                        <li><a href="#methodology-section">Next-Gen Hiring</a></li>
                         <li><a href="#">Case Studies</a></li>
                         <li><a href="#">FAQ</a></li>
                     </ul>
@@ -53,7 +54,7 @@
     
         </header>
         <div class="hero-content container">
-            <div class="left-content">
+            <div class="left-content" data-aos="fade-up" data-aos-delay="300">
                 <div class="cta">
                     <h1>Tap into technical talent like never before</h1>
                     <p>
@@ -66,18 +67,18 @@
                     </a></button>
                 </div>
             </div>
-            <div class="right-content">
+            <div class="right-content" data-aos="fade-up" data-aos-delay="900">
                 <img src="images\hero_image.png" alt="">
             </div>
         </div>
     </div>
     <div class="benefits-section" id="benefits-section">
         <div class="container">
-            <div class="section-intro">
+            <div class="section-intro" data-aos="fade-up" data-aos-delay="300">
                 <h2>Turning Developers Into Work-Ready, Elite Talent</h2>
             </div>
-            <div class="benefits-container">
-                <div class="benefit">
+            <div class="benefits-container"  data-aos="fade-up" data-aos-delay="600">
+                <div class="benefit" data-aos="fade-up" data-aos-delay="900">
                     <div class="benefit-img">
                         <img src="images\pipeline.svg" alt="">
                     </div>
@@ -89,7 +90,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="benefit">
+                <div class="benefit" data-aos="fade-up" data-aos-delay="1200">
                     <div class="benefit-img">
                       <img src="images\de-risk.svg" alt="">
                     </div>
@@ -100,7 +101,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="benefit">
+                <div class="benefit" data-aos="fade-up" data-aos-delay="1500">
                     <div class="benefit-img">
                         <img src="images\workplace.svg" alt="">
                     </div>
@@ -115,18 +116,18 @@
         </div>
     </div>
     <div class="methodology-section" id="methodology-section">
-        <div class="section-intro">
+        <div class="section-intro"  data-aos="fade-up" data-aos-delay="300">
             <h2>The Next-Generation Hiring Methodology</h2>
         </div>
         <div class="methodology-container">
-            <div class="left-content">
+            <div class="left-content"  data-aos="fade-up" data-aos-delay="600">
                 <img src="images\next_gen.png" alt="">
             </div>
-            <div class="right-content">
-                <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+            <div class="right-content"  data-aos="fade-up" data-aos-delay="900">
+                <div class="timeline">
                     <ul>
                         <li>
-                            <div class="timeline-item">
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="1200">
                                 <div class="circle"></div>
                                 <span>01</span>
                                 <div class="timeline-details">
@@ -136,7 +137,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="timeline-item">
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="1500">
                                 <div class="circle"></div>
                                 <span>02</span>
                                 <div class="timeline-details">
@@ -146,7 +147,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="timeline-item">
+                            <div class="timeline-item"  data-aos="fade-up" data-aos-delay="1800">
                                 <div class="circle"></div>
                                 <span>03</span>
                                 <div class="timeline-details">
@@ -156,7 +157,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="timeline-item">
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="2100">
                                 <div class="circle"></div>
                                 <span>04</span>
                                 <div class="timeline-details">
@@ -172,10 +173,10 @@
         </div>
     </div>
     <div class="schedule-section" id="schedule-section">
-        <div class="section-intro">
+        <div class="section-intro" data-aos="fade-up" data-aos-delay="300">
             <h2>Schedule a personalised 1:1</h2>
             <p>Speak to an expert who can walk you through the ways Zaio can benefit your specific situation.</p>
-            <button class="schedule-btn">Get In Touch</button>
+            <button class="schedule-btn" data-aos="fade-up" data-aos-delay="600">Get In Touch</button>
         </div>
     </div>
     <footer class="footer">
@@ -199,6 +200,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts\main.js"></script>
 </body>
 </html>

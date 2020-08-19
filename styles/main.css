@@ -31,6 +31,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -77,9 +78,11 @@ body .section-intro p {
   z-index: 10;
   position: fixed;
   padding: 15px 50px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   background: -webkit-gradient(linear, left top, right top, from(#16325b), to(#37499a));
   background: linear-gradient(to right, #16325b, #37499a);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-section .header .mobile-nav.scrolled,
@@ -144,6 +147,8 @@ body .section-intro p {
   height: 3px;
   background: #fff;
   position: relative;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hero-section .header .mobile-nav .menu-icon-container .menu-icon::before, .hero-section .header .mobile-nav .menu-icon-container .menu-icon::after,
@@ -155,6 +160,8 @@ body .section-intro p {
   width: 100%;
   background: #fff;
   position: absolute;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .hero-section .header .mobile-nav .menu-icon-container .menu-icon::before,
@@ -276,9 +283,11 @@ body .section-intro p {
   -webkit-transition: all .5s;
   transition: all .5s;
   text-decoration: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.hero-section .header .desktop-nav .desktop-menu ul li a:hover {
+.hero-section .header .desktop-nav .desktop-menu ul li a:hover, .hero-section .header .desktop-nav .desktop-menu ul li a.active {
   font-weight: 500;
 }
 
